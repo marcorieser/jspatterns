@@ -9,9 +9,10 @@ require(
         'iterator/init',
         'facade/init',
         'decorator/init',
-        'adapter/init'
+        'adapter/init',
+        'composite/init'
     ],
-    function (factory, pubsub, strategy, observer, cor, mediator, iterator, facade, decorator, adapter) {
+    function (factory, pubsub, strategy, observer, cor, mediator, iterator, facade, decorator, adapter, composite) {
         'use strict';
         var examples = {
             factory: factory,
@@ -23,7 +24,8 @@ require(
             iterator: iterator,
             facade: facade,
             decorator: decorator,
-            adapter: adapter
+            adapter: adapter,
+            composite: composite
         };
 
         window.runExamle = function (example) {
