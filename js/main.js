@@ -3,15 +3,17 @@ require(
         'factory/init',
         'pubsub/init',
         'strategy/init',
-        'observer/init'
+        'observer/init',
+        'cor/init'
     ],
-    function (factory, pubsub, strategy, observer) {
+    function (factory, pubsub, strategy, observer, cor) {
         'use strict';
         var examples = {
             factory: factory,
             pubsub: pubsub,
             strategy: strategy,
-            observer: observer
+            observer: observer,
+            cor: cor
         };
 
         window.runExamle = function (example) {
