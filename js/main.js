@@ -12,9 +12,10 @@ require(
         'adapter/init',
         'composite/init',
         'proxy/init',
-        'inheritance/init'
+        'inheritance/init',
+        'mixin/init'
     ],
-    function (factory, pubsub, strategy, observer, cor, mediator, iterator, facade, decorator, adapter, composite, proxy, inheritance) {
+    function (factory, pubsub, strategy, observer, cor, mediator, iterator, facade, decorator, adapter, composite, proxy, inheritance, mixin) {
         'use strict';
         var examples = {
             factory: factory,
@@ -29,7 +30,8 @@ require(
             adapter: adapter,
             composite: composite,
             proxy: proxy,
-            inheritance: inheritance
+            inheritance: inheritance,
+            mixin: mixin
         };
 
         window.runExamle = function (example) {
